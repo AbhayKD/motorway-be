@@ -1,0 +1,11 @@
+config:
+  target: 'http://localhost:8080' # Base URL of your API
+  phases:
+    - duration: 10
+      arrivalRate: 1
+      rampTo: 20
+      name: "Ramping up the load"
+scenarios:
+  - flow:
+      - get:
+          url: "/vehicle/:id/state-at-timestamp"
