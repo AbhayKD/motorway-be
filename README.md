@@ -23,7 +23,13 @@ To run tests, use the following command:
 - ```npm i```
 - ```npm test```
 
-P.S.: To clean the build of the project (dist/) run ```npm run clean```
+To run load testing, use following command:
+
+- ```npm run load_test```
+
+To clean the build of the project (dist/) run:
+
+-  ```npm run clean```
 
 ## Examples 
 
