@@ -31,6 +31,11 @@ To clean the build of the project (dist/) run:
 
 -  ```npm run clean```
 
+To run the project locally, run the following commands:
+
+- ```npm i```
+- ```npm run start_local```
+
 ## Examples 
 
 ## Get list of Things

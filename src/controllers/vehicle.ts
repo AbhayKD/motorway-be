@@ -17,6 +17,9 @@ export async function getVehicleStateAtTimestamp(_req: Request, res: Response) {
     const response: ResponseWrapper = new ResponseWrapper(res);
     const parsedTimestamp = parseISO(timestamp);
     try {
+        if (!Number(vehicleId) || Number(vehicleId) < 0) {
+            throw new Error('Invalid Vehicle Id provided');
+        }
         if (isValid(parsedTimestamp)) {
             const dateTime: Date = parsedTimestamp;
             return await response.ok({
